@@ -1,21 +1,6 @@
 body {
   background-color: #ffffff;
 }
-.lmj-img {
-  height: 223px;
-  width: 1240px;
-  object-fit: cover;
-  box-shadow: 0px 4px 4px 0px #00000040;
-  border: 1px solid #000000;
-  border-radius: 25px;
-  border-width: 1px;
-  top: 163px;
-  left: 100px;
-}
-
-.lmj-home {
-  width: 100%;
-}
 
 .lmj-banner {
   position: relative;

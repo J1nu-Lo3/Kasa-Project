@@ -1,11 +1,11 @@
-import Banner from "./Banner";
 import "../Styles/Header.css";
+import logo from "../assets/LOGO.png";
 
 function Header() {
   return (
     <header>
-      <div>
-        <Banner />
+      <div className="lmj-banner">
+        <img src={logo} alt="Kasa" className="lmj-logo" />
       </div>
       <nav class="nav-links">
         <a href="/">Accueil</a>
