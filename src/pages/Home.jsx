@@ -4,7 +4,7 @@ import Gallery from "../components/Gallery";
 
 function Home() {
   return (
-    <main>
+    <main className="home">
       <Banner />
       <Gallery />
     </main>

@@ -1,9 +1,13 @@
 .gallery {
-  max-width: 1240px;
-  margin: 40px auto;
+  width: 100%;
+  margin-bottom: 40px;
   padding: 40px;
+
+  box-sizing: border-box; // ✅ FIX IMPORTANT
+
   background-color: #f6f6f6;
   border-radius: 25px;
+
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 50px;
