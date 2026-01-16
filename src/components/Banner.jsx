@@ -3,9 +3,9 @@ import "../components/Banner.scss";
 
 function Banner() {
   return (
-    <div className="lmj-home">
-      <img src={Img} alt="Image paysage" className="lmj-img" />
-    </div>
+    <section className="banner">
+      <h1 className="banner__title">Chez vous, partout et ailleurs</h1>
+    </section>
   );
 }
 

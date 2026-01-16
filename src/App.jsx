@@ -5,6 +5,7 @@ import Error from "./pages/Error";
 import FicheLogement from "./pages/FicheLogement";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import "../src/Styles/App.scss";
 
 function App() {
   return (
