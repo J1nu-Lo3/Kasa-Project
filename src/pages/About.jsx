@@ -1,5 +1,5 @@
 import Img from "../assets/Image_source_2.png";
-import "../Styles/About.css";
+import "../Styles/About.scss";
 
 function About() {
   return (
