@@ -1,3 +1,6 @@
+$white: #ffffff;
+$grey: #f6f6f6;
+
 .gallery {
   width: 100%;
   margin-bottom: 40px;
@@ -5,7 +8,7 @@
 
   box-sizing: border-box;
 
-  background-color: #f6f6f6;
+  background-color: $grey;
   border-radius: 25px;
 
   display: grid;
@@ -38,7 +41,7 @@
     left: 20px;
     right: 20px;
 
-    color: white;
+    color: $white;
     font-size: 18px;
     font-weight: 500;
 

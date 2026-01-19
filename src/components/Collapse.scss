@@ -1,11 +1,16 @@
+$red: #ff6060;
+$white: #ffffff;
+$grey: #f6f6f6;
+$black: #000;
+
 .collapse {
   width: 100%;
   margin-bottom: 20px;
 }
 
 .collapse__header {
-  background-color: #ff6060;
-  color: white;
+  background-color: $red;
+  color: $white;
   font-size: 18px;
   font-weight: 500;
   border: none;
@@ -36,7 +41,7 @@ span {
 }
 
 .collapse__content {
-  background-color: #f6f6f6;
+  background-color: $grey;
   max-height: 0;
   overflow: hidden;
 
@@ -62,7 +67,7 @@ span {
     margin: 0;
     font-size: 16px;
     line-height: 1.6;
-    color: #000;
+    color: $black;
   }
 }
 
