@@ -5,7 +5,7 @@ import "../components/Gallery.scss";
 function Gallery() {
   return (
     <section className="gallery">
-      {logements.slice(0, 6).map((logement) => (
+      {logements.map((logement) => (
         <Link
           to={`/logement/${logement.id}`}
           key={logement.id}
