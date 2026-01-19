@@ -32,7 +32,7 @@ $shadow-card: linear-gradient(
     content: "";
     position: absolute;
     inset: 0;
-    color: $shadow-card;
+    background: $shadow-card;
     z-index: 0;
   }
 
