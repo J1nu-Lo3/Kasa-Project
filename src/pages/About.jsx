@@ -1,11 +1,11 @@
-import Img from "../assets/Image_source_2.png";
+import BannerA from "../components/BannerAbout";
 import "../Styles/About.scss";
 
 function About() {
   return (
-    <div className="lmj-about">
-      <img src={Img} alt="Image paysage" className="lmj-img2" />
-    </div>
+    <main className="about">
+      <BannerA />
+    </main>
   );
 }
 export default About;
