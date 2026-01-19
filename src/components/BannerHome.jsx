@@ -4,7 +4,7 @@ import "./BannerHome.scss";
 function Banner() {
   return (
     <section className="banner-home" style={{ backgroundImage: `url(${Img})` }}>
-      <h1 className="banner__title">Chez vous, partout et ailleurs</h1>
+      <h1 className="banner-home__title">Chez vous, partout et ailleurs</h1>
     </section>
   );
 }
