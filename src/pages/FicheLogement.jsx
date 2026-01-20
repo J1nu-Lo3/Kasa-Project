@@ -1,62 +1,66 @@
 import { useParams, Navigate } from "react-router-dom";
 import logements from "../data/logements.json";
+import Collapse from "../components/Collapse";
+import "../styles/FicheLogement.scss";
 
 function FicheLogement() {
   const { id } = useParams();
-
   const logement = logements.find((item) => item.id === id);
 
-  // Si l'id n'existe pas -> 404
   if (!logement) {
     return <Navigate to="*" />;
   }
 
   return (
-    <div className="fiche-logement">
+    <main className="fiche-logement">
       <img
+        className="fiche-logement__cover"
         src={logement.cover}
         alt={logement.title}
-        style={{ width: "100%", maxWidth: "800px" }}
       />
 
       <div className="fiche-logement__header">
-        <div>
+        <div className="fiche-logement__info">
           <h1>{logement.title}</h1>
-          <p>{logement.location}</p>
+          <p className="fiche-logement__location">{logement.location}</p>
 
           <div className="fiche-logement__tags">
             {logement.tags.map((tag, index) => (
-              <span key={index}>{tag}</span>
+              <span key={index} className="tag">
+                {tag}
+              </span>
             ))}
           </div>
         </div>
 
-        <div className="fiche-logement__host">
-          <p>{logement.host.name}</p>
-          <img src={logement.host.picture} alt={logement.host.name} />
+        <div className="fiche-logement__host-rating">
+          <div className="fiche-logement__host">
+            <p>{logement.host.name}</p>
+            <img src={logement.host.picture} alt={logement.host.name} />
+          </div>
+
+          <div className="fiche-logement__rating">
+            {Array.from({ length: 5 }).map((_, index) => (
+              <span
+                key={index}
+                className={index < logement.rating ? "star active" : "star"}
+              >
+                ★
+              </span>
+            ))}
+          </div>
         </div>
       </div>
 
-      <div className="fiche-logement__rating">
-        {Array.from({ length: 5 }).map((_, index) => (
-          <span key={index}>{index < logement.rating ? "★" : "☆"}</span>
-        ))}
-      </div>
+      <div className="fiche-logement__collapses">
+        <Collapse title="Description" content={logement.description} />
 
-      <div className="fiche-logement__description">
-        <h2>Description</h2>
-        <p>{logement.description}</p>
+        <Collapse
+          title="Équipements"
+          content={logement.equipments.join("\n")}
+        />
       </div>
-
-      <div className="fiche-logement__equipments">
-        <h2>Équipements</h2>
-        <ul>
-          {logement.equipments.map((equipment, index) => (
-            <li key={index}>{equipment}</li>
-          ))}
-        </ul>
-      </div>
-    </div>
+    </main>
   );
 }
 
