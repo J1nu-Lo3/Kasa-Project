@@ -16,6 +16,7 @@ $black: #000;
     font-weight: 700;
     margin: 0;
     line-height: 1;
+    padding-top: 80px;
   }
 
   p {
@@ -26,7 +27,12 @@ $black: #000;
     text-align: center;
     margin: 0;
   }
-
+  p,
+  span {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: normal;
+  }
   a {
     font-family: "Montserrat", sans-serif;
     color: $black;
@@ -34,5 +40,36 @@ $black: #000;
     font-size: 18px;
     font-weight: 500;
     padding-bottom: 150px;
+  }
+}
+
+@media (max-width: 375px) {
+  .error {
+    min-height: calc(100vh - 200px);
+    gap: 113px;
+
+    h1 {
+      font-size: 96px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+    &__text {
+      font-size: 18px;
+      line-height: 1.4;
+      text-align: center;
+      max-width: none;
+
+      span {
+        font-size: 18px;
+        display: block;
+      }
+    }
+
+    a {
+      font-size: 14px;
+      padding-bottom: 100px;
+    }
   }
 }
