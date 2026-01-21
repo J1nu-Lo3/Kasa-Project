@@ -55,3 +55,18 @@ $shadow-card: linear-gradient(
     z-index: 1;
   }
 }
+
+@media (max-width: 375px) {
+  .gallery {
+    background-color: transparent;
+    padding: 0;
+    margin-bottom: 20px;
+
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .card {
+    height: 255px;
+  }
+}
