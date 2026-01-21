@@ -2,6 +2,7 @@ import { useParams, Navigate } from "react-router-dom";
 import logements from "../data/logements.json";
 import Collapse from "../components/Collapse";
 import "../styles/FicheLogement.scss";
+import Carousel from "../components/Carousel";
 
 function FicheLogement() {
   const { id } = useParams();
@@ -13,11 +14,7 @@ function FicheLogement() {
 
   return (
     <main className="fiche-logement">
-      <img
-        className="fiche-logement__cover"
-        src={logement.cover}
-        alt={logement.title}
-      />
+      <Carousel pictures={logement.pictures} title={logement.title} />
 
       <div className="fiche-logement__header">
         <div className="fiche-logement__info">
