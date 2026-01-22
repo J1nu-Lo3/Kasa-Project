@@ -3,13 +3,15 @@ import logements from "../data/logements.json";
 import Collapse from "../components/Collapse";
 import "../styles/FicheLogement.scss";
 import Carousel from "../components/Carousel";
+import starActive from "../assets/star-active.svg";
+import starInactive from "../assets/star-inactive.svg";
 
 function FicheLogement() {
   const { id } = useParams();
   const logement = logements.find((item) => item.id === id);
 
   if (!logement) {
-    return <Navigate to="*" />;
+    return <Navigate to="/error" />;
   }
 
   return (
@@ -37,14 +39,18 @@ function FicheLogement() {
           </div>
 
           <div className="fiche-logement__rating">
-            {Array.from({ length: 5 }).map((_, index) => (
-              <span
-                key={index}
-                className={index < logement.rating ? "star active" : "star"}
-              >
-                ★
-              </span>
-            ))}
+            {Array.from({ length: 5 }).map((_, index) => {
+              const isActive = index < logement.rating;
+
+              return (
+                <img
+                  key={index}
+                  src={isActive ? starActive : starInactive}
+                  alt={isActive ? "étoile active" : "étoile inactive"}
+                  className="star"
+                />
+              );
+            })}
           </div>
         </div>
       </div>
