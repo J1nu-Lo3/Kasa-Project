@@ -1,11 +1,22 @@
 .banner-about {
   display: flex;
   justify-content: center;
+  width: 100%;
 
   &__img {
     height: 223px;
-    width: 1240px;
+    width: 100%;
+    max-width: 1240px;
     object-fit: cover;
     border-radius: 25px;
+  }
+}
+
+@media (max-width: 375px) {
+  .banner-about {
+    &__img {
+      height: 111px;
+      border-radius: 10px;
+    }
   }
 }

@@ -37,6 +37,7 @@ $black: #000;
   .header {
     margin: 20px auto;
     padding: 0 10px;
+    gap: 60px;
 
     &__logo {
       height: 47px;
@@ -45,10 +46,15 @@ $black: #000;
 
   .nav-links {
     gap: 20px;
-
     a {
       font-size: 12px;
       text-transform: uppercase;
+      &.active {
+        text-decoration-style: solid;
+        text-decoration: underline;
+        text-decoration-thickness: 1px;
+        text-underline-offset: 2px;
+      }
     }
   }
 }

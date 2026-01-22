@@ -84,3 +84,33 @@ span {
     transform: translateY(0);
   }
 }
+
+@media (max-width: 375px) {
+  .collapse__header {
+    padding: 10px 12px;
+    border-radius: 5px;
+  }
+
+  span {
+    font-size: 13px;
+    font-weight: 700;
+  }
+
+  .collapse__arrow {
+    width: 16px;
+    height: 16px;
+  }
+
+  .collapse__content {
+    border-radius: 0 0 5px 5px;
+  }
+
+  .collapse__text {
+    padding: 0 12px 12px;
+
+    p {
+      font-size: 12px;
+      line-height: 1.5;
+    }
+  }
+}
