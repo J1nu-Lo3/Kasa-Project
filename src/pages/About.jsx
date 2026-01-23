@@ -1,5 +1,5 @@
-import BannerA from "../components/BannerAbout";
-import Collapse from "../components/Collapse";
+import BannerA from "../components/BannerA/BannerAbout";
+import Collapse from "../components/Collapse/Collapse";
 import { aboutList } from "../data/aboutList";
 import "../Styles/About.scss";
 

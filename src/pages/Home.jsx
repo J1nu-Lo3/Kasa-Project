@@ -1,6 +1,6 @@
-import BannerH from "../components/BannerHome";
+import BannerH from "../components/BannerH/BannerHome";
 import "../Styles/Home.scss";
-import Gallery from "../components/Gallery";
+import Gallery from "../components/Gallery/Gallery";
 
 function Home() {
   return (

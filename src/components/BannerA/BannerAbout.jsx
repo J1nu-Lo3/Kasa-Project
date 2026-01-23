@@ -1,4 +1,4 @@
-import Img from "../assets/Image_source_2.png";
+import Img from "../../assets/Image_source_2.png";
 import "./BannerAbout.scss";
 
 function Banner() {

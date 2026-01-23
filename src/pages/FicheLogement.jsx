@@ -1,8 +1,8 @@
 import { useParams, Navigate } from "react-router-dom";
 import logements from "../data/logements.json";
-import Collapse from "../components/Collapse";
+import Collapse from "../components/Collapse/Collapse";
 import "../styles/FicheLogement.scss";
-import Carousel from "../components/Carousel";
+import Carousel from "../components/Carousel/Carousel";
 import starActive from "../assets/star-active.svg";
 import starInactive from "../assets/star-inactive.svg";
 
