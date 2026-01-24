@@ -1,16 +1,47 @@
-# React + Vite
+# Kasa – Application de location immobilière
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Kasa est une application web développée avec **React** dans le cadre du projet 5, Formation Développeur Web OpenClassrooms.  
+Elle permet d’afficher une liste de logements, de consulter le détail de chaque logement et de naviguer entre différentes pages grâce à **React Router**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technologies utilisées
 
-## React Compiler
+- **React**
+- **React Router DOM**
+- **Vite**
+- **Sass (SCSS)**
+- **JavaScript (ES6+)**
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Installation du projet
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Cloner le dépôt: git clone https://github.com/J1nu-Lo3/Kasa-Project.git
+Puis placer vous dans le projet: cd Kasa-Project
+Installer les dépendances: npm install
+Et Installer Sass (si non présent): npm install -D sass
+
+---
+
+## Lancer le projet en local
+
+taper dans le terminal: npm run dev
+Le projet sera accessible à l’adresse :
+http://localhost:5173
+
+---
+
+## Prérequis
+
+Avant de lancer le projet, assurez-vous d’avoir installé :
+
+- **Node.js** (version 18 ou supérieure recommandée)
+- **npm** (fourni avec Node.js)
+
+👉 Vérification :
+
+```bash
+node -v
+npm -v
+```
