@@ -20,6 +20,17 @@ body {
   }
 }
 
+@media (max-width: 768px) {
+  .about {
+    margin-bottom: 30px;
+
+    &__list {
+      margin-top: 25px;
+      gap: 18px;
+    }
+  }
+}
+
 @media (max-width: 375px) {
   .about {
     padding: 0 10px;

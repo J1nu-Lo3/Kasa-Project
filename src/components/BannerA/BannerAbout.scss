@@ -12,6 +12,12 @@
   }
 }
 
+@media (max-width: 768px) {
+  .banner-about__img {
+    height: 160px;
+  }
+}
+
 @media (max-width: 375px) {
   .banner-about {
     &__img {

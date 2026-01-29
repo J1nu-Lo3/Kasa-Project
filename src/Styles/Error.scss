@@ -43,6 +43,20 @@ $black: #000;
   }
 }
 
+@media (max-width: 768px) {
+  .error {
+    gap: 100px;
+
+    h1 {
+      font-size: 160px;
+    }
+    p,
+    span {
+      font-size: 24px;
+    }
+  }
+}
+
 @media (max-width: 375px) {
   .error {
     min-height: calc(100vh - 200px);
