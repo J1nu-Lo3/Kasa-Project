@@ -8,10 +8,10 @@ $black: #000;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 80px;
 
   &__logo {
     height: 68px;
-    margin-right: 740px;
   }
 }
 
@@ -26,10 +26,42 @@ $black: #000;
     font-weight: 500;
 
     &.active {
-      text-decoration-style: solid;
       text-decoration: underline;
       text-decoration-thickness: 2px;
       text-underline-offset: 6px;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .header {
+    margin: 30px auto;
+    gap: 50px;
+  }
+  .nav-links a {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    gap: 30px;
+
+    &__logo {
+      height: 47px;
+    }
+  }
+
+  .nav-links {
+    gap: 30px;
+    a {
+      font-size: 14px;
+      text-transform: uppercase;
+
+      &.active {
+        text-decoration-thickness: 1px;
+        text-underline-offset: 3px;
+      }
     }
   }
 }
@@ -38,10 +70,10 @@ $black: #000;
   .header {
     margin: 20px auto;
     padding: 0 10px;
+    gap: 20px;
 
     &__logo {
       height: 47px;
-      margin-right: 60px;
     }
   }
 
@@ -51,8 +83,6 @@ $black: #000;
       font-size: 12px;
       text-transform: uppercase;
       &.active {
-        text-decoration-style: solid;
-        text-decoration: underline;
         text-decoration-thickness: 1px;
         text-underline-offset: 2px;
       }

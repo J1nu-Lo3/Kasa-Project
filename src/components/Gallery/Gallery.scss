@@ -12,7 +12,6 @@ $shadow-card: linear-gradient(
   width: 100%;
   margin-bottom: 40px;
   padding: 40px;
-
   box-sizing: border-box;
 
   background-color: $grey;
@@ -22,6 +21,7 @@ $shadow-card: linear-gradient(
   grid-template-columns: repeat(3, 1fr);
   gap: 50px;
 }
+
 .card {
   position: relative;
   height: 340px;
@@ -53,6 +53,29 @@ $shadow-card: linear-gradient(
     font-weight: 500;
 
     z-index: 1;
+  }
+}
+
+@media (max-width: 1024px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    padding: 30px;
+  }
+
+  .card {
+    height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery {
+    gap: 30px;
+    padding: 20px;
+  }
+
+  .card {
+    height: 280px;
   }
 }
 
